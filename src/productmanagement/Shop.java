@@ -30,6 +30,9 @@ public class Shop {
         Product p2 = pm.createProduct(102, "Cake", BigDecimal.valueOf(399.99),Rating.NOT_RATED, LocalDate.now().plusDays(7));
         pm.reviewProduct(p2,Rating.FOUR_STAR, "This Chocolate Cake is yumm as HELL");
         pm.printProductReport();
+        Product p3 = pm.createProduct(103, "Toffee", BigDecimal.valueOf(2),Rating.NOT_RATED);
+        pm.reviewProduct(p3, Rating.TWO_STAR, "Could Be Better");
+        pm.printProductReport();
 //        Product p2 = pm.createProduct(102, "Coffee", BigDecimal.valueOf(12.00),Rating.FOUR_STAR);
 //        Product p3 = pm.createProduct (103, "cake", BigDecimal.valueOf(399.00), Rating.FIVE_STAR, LocalDate.now().plusDays(2));
 //        Product p4 = pm.createProduct(104,"Cookie", BigDecimal.valueOf(30.00),Rating.TWO_STAR, LocalDate.now());
